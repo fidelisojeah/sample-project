@@ -1,0 +1,33 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": true
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/transform-runtime",
+        "@babel/plugin-proposal-object-rest-spread",
+        [
+            "babel-plugin-module-resolver",
+            {
+                "root": [
+                    "./src"
+                ],
+                "alias": {
+                    "@tests": "./src/tests",
+                    "@controllers": "./src/controllers",
+                    "@middlewares": "./src/middlewares",
+                    "@helpers": "./src/helpers",
+                    "@models": "./src/models",
+                    "@validations": "./src/validations",
+                    "@routes": "./src/routes"
+                }
+            }
+        ]
+    ]
+}

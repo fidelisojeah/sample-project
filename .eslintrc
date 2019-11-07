@@ -1,0 +1,37 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "modules": true
+        },
+        "sourceType": "module"
+    },
+    "extends": "airbnb-base",
+    "env": {
+        "node": true,
+        "es6": true,
+        "mocha": true
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "import/no-unresolved": [
+            2,
+            {
+                "commonjs": true
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    }
+}

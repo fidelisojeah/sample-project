@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@tests/*": [
+                "./src/tests/*"
+            ],
+            "@controllers/*": [
+                "./src/controllers/*"
+            ],
+            "@helpers/*": [
+                "./src/helpers/*"
+            ],
+            "@models/*": [
+                "./src/models/*"
+            ],
+            "@validations/*": [
+                "./src/validations/*"
+            ],
+            "@middlewares/*": [
+                "./src/middlewares/*"
+            ],
+            "@routes/*": [
+                "./src/routes/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+}
