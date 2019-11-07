@@ -63,7 +63,7 @@ npm run start:dev
 `POST /api/v1/users` 
 Body
 
-```json
+```javascript
 {
     name: Required,
     email: Required
@@ -80,7 +80,7 @@ Body
 #### Create a new Chore
 `POST /api/v1/chores` 
 Body
-```json
+```javascript
 {
     name: Required,
     description: Required
@@ -97,7 +97,7 @@ Body
 #### Schecdule a Chore
 
 `POST /api/v1/chores/:id/schedule`
-```json
+```javascript
 {
     user: Required, //(The user id)
     type: Required, // (one of ['one-off', 'daily', 'weekly',  'monthly'])
@@ -110,7 +110,7 @@ Body
 #### Schedule a Chore
 
 `POST /api/v1/schedules`
-```json
+```javascript
 {
     chore: Required, // (the id of the chore)
     user: Required, //(The user id)
