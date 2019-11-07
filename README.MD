@@ -63,7 +63,7 @@ npm run start:dev
 `POST /api/v1/users` 
 Body
 
-```json
+```javascript
 {
     name: Required,
     email: Required
